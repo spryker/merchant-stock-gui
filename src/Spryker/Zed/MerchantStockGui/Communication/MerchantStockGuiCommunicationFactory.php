@@ -16,17 +16,11 @@ use Spryker\Zed\MerchantStockGui\Communication\Form\MerchantStockFormType;
  */
 class MerchantStockGuiCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\MerchantStockGui\Communication\Form\MerchantStockFormType
-     */
     public function createMerchantStockForm(): MerchantStockFormType
     {
         return new MerchantStockFormType();
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantStockGui\Communication\Form\DataProvider\MerchantStockFormDataProvider
-     */
     public function createMerchantStockFormDataProvider(): MerchantStockFormDataProvider
     {
         return new MerchantStockFormDataProvider();
